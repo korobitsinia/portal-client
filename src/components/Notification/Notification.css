@@ -1,0 +1,47 @@
+.notification {
+  position: fixed;
+  width: 400px;
+  padding: 12px;
+  right: 50px;
+  bottom: 200px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  color: #ffd671;
+  background: #712818;
+  z-index: 999;
+  text-align: center;
+}
+
+.circle {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px dashed black;
+  z-index: 999;
+  text-align: center;
+}
+
+.notification.entering {
+  animation: show1 0.5s forwards;
+}
+.notification.entered {
+}
+.notification.exiting {
+  animation: show1 0.5s reverse;
+}
+.notification.exited {
+}
+
+@keyframes show1 {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

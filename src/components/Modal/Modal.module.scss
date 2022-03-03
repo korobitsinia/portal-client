@@ -1,0 +1,60 @@
+@import "./../../variables";
+
+.dark {
+  z-index: 10;
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  backdrop-filter: blur(3px);
+
+  .modal {
+    position: relative;
+    overflow: auto;
+    margin: 80px auto 0 auto;
+    min-width: 400px;
+    max-height: 800px;
+    min-height: 100px;
+    background: $sub-white;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .55);
+    padding: 10px;
+    animation: show-modal .5s forwards;
+
+    .close {
+      cursor: pointer;
+      font-size: 36px;
+      position: absolute;
+      right: 1px;
+      top: -12px;
+    }
+
+    .title {
+      color: $grey;
+      text-align: center;
+      margin-bottom: 4px;
+    }
+
+    .hr {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@keyframes show-modal {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+  }
+
+}

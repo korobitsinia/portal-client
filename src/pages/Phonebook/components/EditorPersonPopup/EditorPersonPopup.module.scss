@@ -1,0 +1,31 @@
+@import "src/variables";
+
+.popup {
+  color: $grey;
+
+  .editor {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .row {
+      width: 80%;
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
+
+select {
+  text-align: center;
+  width: 80%;
+  padding: 2px 8px;
+  font-size: 1rem;
+  color: $grey;
+  font-weight: 600;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+}

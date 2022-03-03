@@ -1,0 +1,44 @@
+@import "src/variables";
+
+.authentication {
+
+}
+
+.form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+
+  .row {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .authButton{
+      align-self: flex-end;
+      min-width: 45%;
+      margin-bottom: 1rem;
+    }
+
+
+    & label {
+      flex-basis: 50%;
+      line-height: 1;
+    }
+  }
+}
+.alignRight {
+  justify-content: flex-end !important;
+}
+
+//.tooltip {
+//  border-radius: 8px;
+//  padding: 8px;
+//  display: block !important;
+//  text-align: center;
+//  color: $red;
+//  font-weight: 600;
+//}

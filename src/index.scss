@@ -1,0 +1,36 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  list-style: none;
+  outline: none;
+  font-family: "Inter", system-ui, serif;
+}
+
+html, body, #root {
+  min-width: 100%;
+  height: 100%;
+
+}
+
+.application {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y:scroll;
+
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1220px;
+  min-width: 600px;
+  padding: 0 10px;
+}
+
+
+

@@ -1,0 +1,15 @@
+@import "src/variables";
+
+
+.input {
+  width: 80%;
+  padding: 2px 8px;
+  font-size: 1rem;
+  color: $grey;
+  font-weight: 600;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+}
+.centre {
+  text-align: center;
+}

@@ -1,0 +1,20 @@
+@import "src/variables";
+
+.dep {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+
+  .title {
+    width: 100%;
+    background: $sub-white;
+    padding: 8px 16px;
+    color: $black;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-bottom: 1px solid $border-color;
+  }
+}

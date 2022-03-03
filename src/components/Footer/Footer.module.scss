@@ -1,0 +1,22 @@
+@import "./../../variables";
+
+
+.footer {
+  flex: 0 1 auto;
+  background: $sub-white;
+  margin-top: 20px;
+  border-top: 1px solid $border-color;
+  max-height: 40px;
+}
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .left,
+  .right {
+    padding: 5px;
+  }
+}
+
+

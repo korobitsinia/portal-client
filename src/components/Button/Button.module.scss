@@ -1,0 +1,48 @@
+@import "src/variables";
+
+.button {
+  padding: 8px;
+  min-width: 100px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background: $sub-white;
+  color: $grey;
+  border: 1px solid $border-color;
+  cursor: pointer;
+  //box-shadow: 1px 3px 3px #aeaeae;
+
+  &:hover {
+    background: darken($sub-white, 10%);
+  }
+
+  &:active {
+    background: darken($sub-white, 10%);
+  }
+}
+
+.yellow {
+  background: rgba($gold,.7);
+  padding: 8px;
+
+  &:hover {
+    background: lighten($gold, 5%);
+  }
+
+  &:active {
+    background: darken($gold, 5%);
+  }
+}
+
+.red {
+  background: rgba($red,.9);
+  color: $white-font;
+
+  &:hover {
+    background: lighten($red, 5%);
+  }
+
+  &:active {
+    background: darken($red, 5%);
+  }
+}
