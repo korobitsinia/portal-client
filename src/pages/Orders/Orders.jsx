@@ -4,11 +4,12 @@ import ContentHeader from "../../components/ContentHeader/ContentHeader";
 const Orders = () => {
   return (
     <div>
-      <ContentHeader>
-				
-			</ContentHeader>
+      <ContentHeader></ContentHeader>
+
+      <div>
+        <h2>ORDERS</h2>
+      </div>
     </div>
   );
 };
-
 export default Orders;
