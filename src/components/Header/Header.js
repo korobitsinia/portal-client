@@ -27,7 +27,7 @@ const Header = () => {
 						<div className={styles.title}>
 							<img src={logo} alt={"Logo"}/>
 							<h2 className={styles.text}>Справочный портал
-								<br/>ФГКУ "ЦУС войск национальной гвардии"</h2>
+								<br/>some brand</h2>
 						</div>
 						{(authGlobalStateName === 'viewer') ?
 							<Button title={"Войти"} onClick={handleModalToggle}/>
