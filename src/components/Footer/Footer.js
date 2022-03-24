@@ -10,7 +10,7 @@ const Footer = () => {
 						ЦИТ 2021
 					</div>
 					<div className={styles.right}>
-						ФГКУ "ЦУС войск национальной гвардии"
+						some text
 					</div>
 				</div>
 
