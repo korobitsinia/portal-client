@@ -7,5 +7,13 @@ import Header from "./Header/Header";
 import Input from "./Input/Input";
 import Modal from "./Modal/Modal";
 
-
-export  {Authentication, Button, Content, ContentHeader, Footer, Header, Input, Modal}
+export {
+  Authentication,
+  Button,
+  Content,
+  ContentHeader,
+  Footer,
+  Header,
+  Input,
+  Modal,
+};

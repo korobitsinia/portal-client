@@ -1,0 +1,26 @@
+@import './../../../../variables.scss';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & textarea {
+    width: 80%;
+    padding: 2px 8px;
+    font-size: 1rem;
+    color: $grey;
+    font-weight: 600;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    min-height: 30px;
+    resize: none;
+  }
+}
+
+.row {
+  margin-top: 1rem;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}

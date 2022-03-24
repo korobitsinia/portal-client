@@ -1,0 +1,23 @@
+@import "./../../../../variables.scss";
+.section {
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  width: 100%;
+  background: $sub-white;
+  padding: 8px 16px;
+  color: $black;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-bottom: 1px solid $border-color;
+}
+.rows {
+  display: flex;
+  flex-direction: column;
+  & div:last-child {
+    border: none;
+  }
+}

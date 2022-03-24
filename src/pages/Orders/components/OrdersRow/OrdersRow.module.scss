@@ -1,0 +1,28 @@
+@import "./../../../../variables.scss";
+
+.row {
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid $red;
+  & div {
+    text-align: left;
+    padding: 0 6px;
+  }
+  & div:nth-child(1) {
+    flex-basis: 10%;
+  }
+  & div:nth-child(2) {
+    flex-basis: 10%;
+  }
+  & div:nth-child(3) {
+    flex-basis: 15%;
+  }
+  & div:nth-child(4) {
+    flex-basis: 50%;
+  }
+  & button {
+    flex-basis: 10%;
+  }
+}

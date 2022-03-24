@@ -1,9 +1,15 @@
-import {combineReducers} from "redux";
+import { combineReducers } from "redux";
 
-import phonebook from "./phonebook/reducer"
-import authentication from './authentication/reducer'
+import authentication from "./authentication/reducer";
 import responseLog from "./responseLog/reducer";
+import phonebook from "./phonebook/reducer";
+import orders from "./orders/reducer";
 
-const rootReducer = combineReducers({phonebook, authentication,responseLog})
+const rootReducer = combineReducers({
+  phonebook,
+  authentication,
+  responseLog,
+  orders,
+});
 
-export default rootReducer
+export default rootReducer;

@@ -5,8 +5,8 @@ const Input = (props) => {
 	return (
 		<input
 			id={props.id}
-			style={{width:`${props.width}px`}}
-			className={`${styles.input} ${props.centre? styles.centre:null} ${props.className}`}
+			style={{ width: `${props.width}px` }}
+			className={`${styles.input} ${props.centre ? styles.centre : null} ${props.className}`}
 			placeholder={props.placeholder}
 			type={props.type}
 			name={props.name}

@@ -1,12 +1,12 @@
-import { useState} from "react";
+import { useState } from "react";
 import styles from "./PersonInTheDepartment.module.scss";
 import PersonPopup from "../PersonPopup/PersonPopup";
 import EditorPersonPopup from "../EditorPersonPopup/EditorPersonPopup";
-import {useSelector} from "react-redux";
+import { useSelector } from "react-redux";
 
-const PersonInTheDepartment = ({person, depName}) => {
+const PersonInTheDepartment = ({ person, depName }) => {
 
-	const {access: {phonebook}} = useSelector(({authentication}) => authentication)
+	const { access: { phonebook } } = useSelector(({ authentication }) => authentication)
 	const [modal, setModal] = useState(false)
 
 	const handleModalToggle = () => {
@@ -35,8 +35,8 @@ const PersonInTheDepartment = ({person, depName}) => {
 				<div>{person.num_work}</div>
 				<div>{person.num_reserve}</div>
 			</div>
-			{modal && phonebook > 1 && <EditorPersonPopup person={person} close={handleModalToggle}/>}
-			{modal && phonebook <= 1 && <PersonPopup person={person} depName={depName} close={handleModalToggle}/>}
+			{modal && phonebook > 1 && <EditorPersonPopup person={person} close={handleModalToggle} />}
+			{modal && phonebook <= 1 && <PersonPopup person={person} depName={depName} close={handleModalToggle} />}
 		</>
 	)
 }

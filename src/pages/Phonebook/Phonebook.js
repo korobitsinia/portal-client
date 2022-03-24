@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Phonebook.module.scss";
 import HeaderBlock from "./components/HeaderBlock/HeaderBlock";
-import ContentHeader from "../../components/ContentHeader/ContentHeader";
+import {ContentHeader} from "../../components/components";
 import Department from "./components/Department/Department";
 import { useSelector } from "react-redux";
 
@@ -14,16 +14,16 @@ const Phonebook = () => {
 
   return (
     <div className={styles.phonebook}>
-       <ContentHeader>
+      <ContentHeader>
         <HeaderBlock />
-      </ContentHeader> 
+      </ContentHeader>
 
       <div className={`${styles.body} body`}>
         <div className="container">
           <Department />
         </div>
-      </div> 
-     </div>
+      </div>
+    </div>
   );
 };
 
